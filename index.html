@@ -7,10 +7,16 @@
 </head>
 <body>
     <script>
-        let string = "123";
-        let number = Number(string);
+        const startTime = "15:40";
+        console.log(startTime);
 
-        console.log(typeof number, " : ", typeof string);
+        const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const LENGTH_ALPHABET = ALPHABET.length;
+
+        console.log(LENGTH_ALPHABET);
+        //Both essentially the same thing, but at() allows for negative index's 
+        console.log(ALPHABET.charAt(0));
+        console.log(ALPHABET.at(-1));
     </script>
 
 
