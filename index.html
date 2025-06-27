@@ -7,15 +7,32 @@
 </head>
 <body>
     <script>
-        let age = 13;
-
-        if (!(age >= 14 && age <= 90))
+        let login;
+        let passowrd;
+        login = prompt("Enter a UserName")
+        if (login == "Admin")
         {
-            console.log("You're either really young, or really REALLY old");
+            passowrd = prompt("Enter a Password")
+            if (passowrd == "TheMaster")
+            {
+                alert("Welcome!");
+            }
+            else if (typeof passowrd == "string")
+            {
+                alert("Wrong Password");
+            }
+            else 
+            {
+                alert("Cancelled");
+            }
         }
-        else if (age >= 14 && age <= 90)
+        else if (typeof login != "string" || login == "")
         {
-            console.log("I'm Mr. Meeseeks, look at me!");
+            alert("Cancelled");
+        }
+        else
+        {
+            alert("User unknown: " + login);
         }
     </script>
 
