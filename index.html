@@ -10,9 +10,10 @@
         const startTime = "15:40";
         console.log(startTime);
         
-        let padded = "Hi!";
-        // pads until the length of the string is equal to the first number by filled with the second input, which is a string
-        console.log(padded.padStart(6, "0"));
+        let text = "Please visit SpaCEX, now SpaceX";
+        let newText = text.replace(/SpaceX/ig, "NASA");
+
+        console.log(newText);
     </script>
 
 
