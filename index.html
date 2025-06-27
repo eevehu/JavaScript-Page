@@ -7,32 +7,15 @@
 </head>
 <body>
     <script>
-        let login;
-        let passowrd;
-        login = prompt("Enter a UserName")
-        if (login == "Admin")
+        let userInput = prompt("What is the offical name for \"JavaScript?\"", "");
+        let answer = "ECMAScript";
+        if (userInput === answer)
         {
-            passowrd = prompt("Enter a Password")
-            if (passowrd == "TheMaster")
-            {
-                alert("Welcome!");
-            }
-            else if (typeof passowrd == "string")
-            {
-                alert("Wrong Password");
-            }
-            else 
-            {
-                alert("Cancelled");
-            }
-        }
-        else if (typeof login != "string" || login == "")
-        {
-            alert("Cancelled");
+            alert("Right! Also, Elf-o");
         }
         else
         {
-            alert("User unknown: " + login);
+            alert("You don’t know? ECMAScript!");
         }
     </script>
 
