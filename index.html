@@ -7,10 +7,16 @@
 </head>
 <body>
     <script>
-        for (let i = 0; i < 3; i++)
-        {
-            console.log(`This is the ${i}th iteration`);
+        let sum = 0;
+        
+        while(true) {
+            let userInput = +prompt("Please enter a number", "");
+
+            // Allows the user to exit when they're done entering operands
+            if (!userInput) break;
+            sum += userInput;
         }
+        alert(sum);
     </script>
 
 
